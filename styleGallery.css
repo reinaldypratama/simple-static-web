@@ -1,0 +1,227 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(assets/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.logo-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.tambahan {
+    display: inline-block;
+    width: 15%;
+}
+
+.drop {
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+}
+
+.dropdown a {
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    width: 19%;
+    color: #FFFFFF;
+    padding: 14px 0px;
+    text-decoration: none;
+    font-size: 25pt;
+}
+
+.dropdown a:hover {
+    background-color: black;
+}
+
+.drop:hover {
+    background-color: black;
+}
+
+.dropdown .drop:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 19%;
+}
+
+.dropdown-content a {
+    display: block;
+    width: 100%;
+}
+
+.dropdown-content a:hover {
+    color: purple;
+}
+
+.footer {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    margin-top: 15%;
+    width: 100%;
+}
+
+.footer a.center {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.isiGallery {
+    color: rgb(237, 213, 247);
+    font-style: italic;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+}
+.koleksi-barang {
+    align-items: center;
+    text-align: center;
+    margin-top: 3%;
+}
+.gambar-koleksi-barang {
+    width: 100%;
+    border-radius: 35%;
+    border-width: 0.3cm;
+    border-color: rgb(196, 171, 219);
+    border-style: solid;
+}
+.border {
+    display: inline-block;
+    margin: 0% 4.6%;
+    width: 40%;
+    text-align: left;
+    min-height: 42.67px;
+    border-color: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding-bottom: 15px;
+}
+.border p {
+    margin-left: 4%;
+}
+.judul {
+    font-size: 20pt;
+    color: white;
+    font-weight: bold;
+}
+.GalleryText {
+    font-size: 50pt;
+    color: white;
+    text-align: center;
+    margin: 160px auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* color: rgb(231, 191, 247); */
+}
+@media only screen and (max-width:800px) {
+    .dropdown {
+        height: fit-content;
+        overflow: hidden;
+        margin: 0;
+        position: relative;
+    }
+    
+    .tambahan {
+        display: none;
+    }
+    
+    .dropdown a {
+        padding-left: 12px;
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+    
+    .drop {
+        display: block;
+        width: 100%;
+    }
+    
+    .dropdown .drop:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: black;
+        width: 100%;
+    }
+    
+    .dropdown-content a {
+        display: block;
+        width: 100%;
+        padding-left: 8%;
+    }
+    
+    .GalleryText {
+        font-size: 25pt;
+        color: white;
+        text-align: center;
+        margin: 160px auto;
+    }
+    
+    .koleksi-barang {
+        margin-top: 3%;
+        margin-left: 3%;
+    }
+    
+    .gambar-koleksi-barang {
+        width: 100%;
+    }
+    
+    .border {
+        display: inline-block;
+        margin: 0% 2.3%;
+        width: 80%;
+        text-align: left;
+        min-height: 42.67px;
+        border-color: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding-bottom: 15px;
+    }
+    
+    .border p {
+        margin-left: 4%;
+    }
+    
+    .judul {
+        font-size: 20pt;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .footer {
+        display: inline-block;
+        background-color: black;
+        color: white;
+        margin-top: 15%;
+        width: 100%;
+    }
+    
+    .footer a.center {
+        float: left;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+}

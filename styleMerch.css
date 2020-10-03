@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(assets/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.logo-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.tambahan {
+    display: inline-block;
+    width: 15%;
+}
+
+.drop {
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+}
+
+.dropdown a {
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    width: 19%;
+    color: #FFFFFF;
+    padding: 14px 0px;
+    text-decoration: none;
+    font-size: 25pt;
+}
+
+.dropdown a:hover {
+    background-color: black;
+}
+
+.drop:hover {
+    background-color: black;
+}
+
+.dropdown .drop:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 19%;
+}
+
+.dropdown-content a {
+    display: block;
+    width: 100%;
+}
+
+.isiMerch {
+    font-size: 20pt;
+    font-weight: lighter;
+    color: white;
+    text-align: left;
+    margin: 20px auto;
+    font-family: fantasy;
+}
+
+.dropdown-content a:hover {
+    color: rgb(170, 94, 170);
+}
+
+.MerchText {
+    font-size: 25pt;
+    text-align: center;
+    color: rgb(231, 191, 247);
+    background-color: rgba(0, 0, 0, 0.651);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.button-feed {
+    size: 100px;
+    background-color: black;
+    color: white;
+    padding: 12px 8px;
+    margin: 2% 1%;
+    border: 0;
+    align-items: center;
+    width: 100px;
+    height: auto;
+    font-size: 20pt;
+    outline-color: whitesmoke;
+    outline-style: solid;
+}
+
+.koleksi-barang {
+    align-items: left;
+    text-align: left;
+    margin-top: 3%;
+}
+
+.gambar-koleksi-barang {
+    width: 100%;
+    outline-style: solid;
+    outline-width: 0.3cm;
+    outline-color: rgb(173, 124, 219);
+}
+
+.logoh {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.border {
+    display: inline-block;
+    margin: 0% 2.3%;
+    width: 20%;
+    text-align: left;
+    min-height: 42.67px;
+    border-color: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding-bottom: 15px;
+}
+
+.border p {
+    margin-left: 4%;
+}
+
+.footer {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    margin-top: 50%;
+    width: 100%;
+}
+
+.footer a.center {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:800px) {
+    .dropdown {
+        height: fit-content;
+        overflow: hidden;
+        margin: 0;
+        position: relative;
+    }
+    .tambahan {
+        display: none;
+    }
+    .dropdown a {
+        padding-left: 12px;
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+    .drop {
+        display: block;
+        width: 100%;
+    }
+    .dropdown .drop:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: black;
+        width: 100%;
+    }
+    .dropdown-content a {
+        display: block;
+        width: 100%;
+        padding-left: 8%;
+    }
+    .footer {
+        display: inline-block;
+        background-color: black;
+        color: white;
+        margin-top: 15%;
+        width: 100%;
+    }
+    .footer a.center {
+        float: left;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .MerchText {
+        font-size: 15pt;
+        color: white;
+        text-align: center;
+        margin: 30px auto;
+    }
+}

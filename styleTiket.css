@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(assets/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.tiket-img {
+    display: block;
+    width: 40%;
+    height: 20%;
+    padding-top: 15%;
+    padding-left: 30%;
+}
+
+.logo-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.tambahan {
+    display: inline-block;
+    width: 15%;
+}
+
+.drop {
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+}
+
+.dropdown a {
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    width: 19%;
+    color: #FFFFFF;
+    padding: 14px 0px;
+    text-decoration: none;
+    font-size: 25pt;
+}
+
+.dropdown a:hover {
+    background-color: black;
+}
+
+.drop:hover {
+    background-color: black;
+}
+
+.dropdown .drop:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 19%;
+}
+
+.dropdown-content a {
+    display: block;
+    width: 100%;
+}
+
+.dropdown-content a:hover {
+    color: purple;
+}
+
+.main {
+    height: auto;
+    padding-bottom: 15%;
+}
+
+.ourtiket {
+    margin-top: 5%;
+    font-size: 25pt;
+    color: white;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content {
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.content-dalam {
+    margin: auto;
+    text-align: left;
+    width: 40%;
+    height: auto;
+}
+
+.but {
+    color: #ffffff;
+    background-color: purple;
+    width: 35%;
+    padding: 8px 4px;
+    margin: 20px 0;
+    border: 0;
+    text-align: center;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid purple;
+    color: purple;
+    width: 100%;
+    font-size: 16pt;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input[type=number] {
+    border: none;
+    border-bottom: 2px solid purple;
+    color: purple;
+    width: 100%;
+    font-size: 16pt;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+label {
+    color: white;
+    width: 40%;
+}
+
+.label {
+    color: rgb(235, 198, 235);
+    font-size: 16pt;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+select {
+    color: purple;
+}
+
+option {
+    color: purple;
+    font-size: 16pt;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input[type=checkbox] {
+    color: purple;
+    font-size: 16pt;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+select {
+    border: none;
+    border-bottom: 2px solid purple;
+    font-size: 16pt;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.error {
+    background-color: purple2;
+    text-align: center;
+    color: white;
+}
+
+.error label {
+    color: white;
+}
+
+.footer {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    margin-top: 15%;
+    width: 100%;
+}
+
+.footer a.center {
+    padding-top: 100%;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:800px) {
+    .dropdown {
+        height: fit-content;
+        overflow: hidden;
+        margin: 0;
+        position: relative;
+    }
+    .tambahan {
+        display: none;
+    }
+    .dropdown a {
+        padding-left: 12px;
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+    .drop {
+        display: block;
+        width: 100%;
+    }
+    .dropdown .drop:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: black;
+        width: 100%;
+    }
+    .dropdown-content a {
+        display: block;
+        width: 100%;
+        padding-left: 8%;
+    }
+    .footer {
+        display: inline-block;
+        background-color: black;
+        color: white;
+        margin-top: 15%;
+        width: 100%;
+    }
+    .footer a.center {
+        float: left;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .main {
+        height: auto;
+    }
+    .ourtiket {
+        font-size: 25pt;
+        color: white;
+        text-align: left;
+    }
+    .but {
+        color: #ffffff;
+        background-color: purple;
+        width: 35%;
+        padding: 8px 4px;
+        margin: 20px 0;
+        border: 0;
+        text-align: left;
+    }
+}

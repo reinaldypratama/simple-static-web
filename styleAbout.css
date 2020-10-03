@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(assets/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.logo-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.tambahan {
+    display: inline-block;
+    width: 15%;
+}
+
+.drop {
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+}
+
+.dropdown a {
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    width: 19%;
+    color: #FFFFFF;
+    padding: 14px 0px;
+    text-decoration: none;
+    font-size: 25pt;
+}
+
+.dropdown a:hover {
+    background-color: black;
+}
+
+.drop:hover {
+    background-color: black;
+}
+
+.dropdown .drop:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 19%;
+}
+
+.dropdown-content a {
+    display: block;
+    width: 100%;
+}
+
+.dropdown-content a:hover {
+    color: purple;
+}
+
+.AboutUs {
+    font-size: 25pt;
+    color: rgb(219, 146, 219);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 55px auto;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.koleksi-barang {
+    align-items: center;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.gambar-koleksi-barang {
+    width: 80px;
+}
+
+.border {
+    display: inline-block;
+    margin: 0% 2.3%;
+    width: 20%;
+    text-align: center;
+    min-height: 42.67px;
+    border-color: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding-bottom: 15%;
+}
+
+.border p {
+    margin-left: 4%;
+}
+
+.footer {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    margin-top: 15%;
+    width: 100%;
+}
+
+.footer a.center {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:800px) {
+    .dropdown {
+        height: fit-content;
+        overflow: hidden;
+        margin: 0;
+        position: relative;
+    }
+    .tambahan {
+        display: none;
+    }
+    .dropdown a {
+        padding-left: 12px;
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+    .drop {
+        display: block;
+        width: 100%;
+    }
+    .dropdown .drop:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: black;
+        width: 100%;
+    }
+    .dropdown-content a {
+        display: block;
+        width: 100%;
+        padding-left: 8%;
+    }
+    .footer {
+        display: inline-block;
+        background-color: black;
+        color: white;
+        margin-top: 15%;
+        width: 100%;
+    }
+    .footer a.center {
+        float: left;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .AboutUs {
+        font-size: 25pt;
+        color: white;
+        text-align: center;
+        margin: 160px auto;
+    }
+    p {
+        text-align: center;
+        font-size: 25px;
+        color: #FFFFFF;
+    }
+    .koleksi-barang {
+        align-items: center;
+        text-align: center;
+        margin-top: 3%;
+    }
+    .gambar-koleksi-barang {
+        width: 50px;
+        height: auto;
+    }
+    .border {
+        display: inline-block;
+        margin: 0% 2.3%;
+        width: 20%;
+        text-align: left;
+        min-height: 42.67px;
+        border-color: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding-bottom: 15px;
+    }
+    .border p {
+        margin-left: 4%;
+    }
+}

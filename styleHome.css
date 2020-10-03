@@ -1,0 +1,325 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    text-align: center;
+}
+
+body {
+    background-image: url(assets/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.logo-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.tambahan {
+    display: inline-block;
+    width: 15%;
+}
+
+.drop {
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+}
+
+.dropdown a {
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    width: 19%;
+    color: #FFFFFF;
+    padding: 14px 0px;
+    text-decoration: none;
+    font-size: 25pt;
+}
+
+.dropdown a:hover {
+    background-color: black;
+}
+
+.drop:hover {
+    background-color: black;
+}
+
+.dropdown .drop:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 19%;
+}
+
+.dropdown-content a {
+    display: block;
+    width: 100%;
+}
+
+
+.dropdown-content a:hover{
+    color: purple;
+}
+.ourconsert {
+    font-size: 50pt;
+    text-align: center;
+    margin: 100px auto;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.container {
+    width: 1080px;
+    margin: 80px auto;
+    overflow: auto;
+}
+
+.slider-inner {
+    width: 1000px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    padding: 3px;
+    border: #666 solid 1px;
+}
+
+.slider-inner img {
+    display: none;
+    width: 1000px;
+    height: 600px;
+}
+
+.slider-inner img.active {
+    display: inline-block;
+}
+
+.prev,
+.next {
+    float: left;
+    margin-top: 260px;
+    cursor: pointer;
+}
+
+.prev {
+    position: relative;
+    margin-right: -90px;
+    z-index: 200;
+}
+
+.next {
+    position: relative;
+    margin-left: -50px;
+    z-index: 200;
+}
+
+.ourcategory {
+    font-size: 50pt;
+    width: 540px;
+    margin: 40px auto;
+    color: white;
+    width: 540px;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    margin-bottom: 100px;
+    overflow: auto;
+}
+
+.koleksi-barang {
+    align-items: center;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.gambar-koleksi-barang {
+    width: 100%;
+}
+
+.gambar-koleksi-barang:hover {
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+}
+
+.border {
+    display: inline-block;
+    margin: 0% 2.3%;
+    width: 20%;
+    text-align: left;
+    min-height: 42.67px;
+    border-color: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding-bottom: 15px;
+}
+
+.border p {
+    margin-left: 4%;
+}
+
+.judul {
+    font-size: 20pt;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    margin-top: 15%;
+    width: 100%;
+}
+
+.footer a.center {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:800px) {
+    .dropdown {
+        height: fit-content;
+        overflow: hidden;
+        margin: 0;
+        position: relative;
+    }
+    .tambahan {
+        display: none;
+    }
+    .dropdown a {
+        padding-left: 12px;
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+    .drop {
+        display: block;
+        width: 100%;
+    }
+    .dropdown .drop:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: black;
+        width: 100%;
+    }
+    .dropdown-content a {
+        display: block;
+        width: 100%;
+        padding-left: 8%;
+    }
+    .footer {
+        display: inline-block;
+        background-color: black;
+        color: white;
+        margin-top: 15%;
+        width: 100%;
+    }
+    .footer a.center {
+        float: left;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .ourconsert {
+        font-size: 50pt;
+        color: white;
+        text-align: left;
+    }
+    .container {
+        width: 560px;
+        margin: 40px auto;
+        overflow: auto;
+    }
+    .slider-inner {
+        width: 500px;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+        float: left;
+        padding: 3px;
+        border: #666 solid 1px;
+    }
+    .slider-inner img {
+        display: none;
+        width: 500px;
+        height: 300px;
+    }
+    .slider-inner img.active {
+        display: inline-block;
+    }
+    .prev,
+    .next {
+        float: left;
+        margin-top: 140px;
+        cursor: pointer;
+    }
+    .prev {
+        position: relative;
+        margin-right: -45px;
+        z-index: 100;
+    }
+    .next {
+        position: relative;
+        margin-left: -45px;
+        z-index: 100;
+    }
+    .ourcategory {
+        font-size: 50pt;
+        width: 540px;
+        margin: 40px auto;
+        color: white;
+        width: 540px;
+        text-align: left;
+        margin-bottom: 100px;
+        overflow: auto;
+    }
+    .koleksi-barang {
+        margin-top: 3%;
+        margin-left: 3%;
+    }
+    .gambar-koleksi-barang {
+        width: 100%;
+    }
+    .border {
+        display: inline-block;
+        margin: 0% 2.3%;
+        width: 20%;
+        text-align: left;
+        min-height: 42.67px;
+        border-color: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding-bottom: 15px;
+    }
+    .border p {
+        margin-left: 4%;
+    }
+    .judul {
+        font-size: 20pt;
+        color: white;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" type="text/CSS" href="styleMerch.css">
+</head>
+
+<body>
+    <nav>
+        <a class="contact" href="Home.html" target="_self">
+
+            <img class="logo-img" href src="assets/Logo Hci.png">
+
+        </a>
+        <div class="dropdown">
+            <a href="Home.html">Home</a>
+            <a href="Gallery.html">Gallery</a>
+            <div class="drop">
+                <a href="" style="width: 100%;">Merch Official</a>
+                <div class="dropdown-content">
+                    <a href="MerchStore.html">Hoodies</a>
+                    <a href="MerchStore2.html">Accessories</a>
+
+                </div>
+            </div>
+            <a href="Tiket.html">Ticket</a>
+            <a href="About.html">About</a>
+        </div>
+    </nav>
+    <div>
+        <img class="logoh" src="assets/crypton.png" alt=""><br>
+        <br><br>
+        <p class="MerchText">Crypton Merch Official</p>
+        <p class="MerchText">Accesories</p>
+    </div>
+    <div class="koleksi-barang">
+
+        <div class="border">
+            <img class="gambar-koleksi-barang" src="assets/Merch/other1.jpg" alt="">
+            <h1 class="isiMerch">Haunted keychain</h1>
+            <h1 class="isiMerch">IDR 30000</h1>
+            <button class="button-feed" id="feedBtn" onclick="play()">Buy</button>
+        </div>
+        <div class="border">
+            <img class="gambar-koleksi-barang" src="assets/Merch/other2.jpg" alt="">
+
+            <h1 class="isiMerch">Quad keychain</h1>
+            <h1 class="isiMerch">IDR 20000</h1>
+            <button class="button-feed" id="feedBtn" onclick="play()">Buy</button>
+        </div>
+        <div class="border">
+            <img class="gambar-koleksi-barang" src="assets/Merch/other3.jpg" alt="">
+
+            <h1 class="isiMerch">Alan Bag</h1>
+
+            <h1 class="isiMerch">IDR 150000</h1>
+            <button class="button-feed" id="feedBtn" onclick="play()">Buy</button>
+        </div>
+        <div class="border">
+            <img class="gambar-koleksi-barang" src="assets/Merch/other4.jpg" alt="">
+
+            <h1 class="isiMerch">Mug</h1>
+            <h1 class="isiMerch">IDR 50000</h1>
+            <button class="button-feed" id="feedBtn" onclick="play()">Buy</button>
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer">
+            <a class="center">&copy;Copyright Miku e-SKpo 2020</a>
+
+        </div>
+    </footer>
+
+    <script>
+        var nama;
+        var hp;
+        var feeds;
+        var alamat;
+        var email;
+        var angka = "[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]";
+
+        function play() {
+            nama = prompt("Please enter your name:");
+            if (nama == null) {
+                return;
+            } else if (nama == "") {
+                alert('Name Can\'t be Empty');
+                play();
+            } else {
+
+                feedback();
+                return
+            }
+        }
+
+
+        function feedback() {
+            feeds = prompt("Please write how many items do you want? [1-10]");
+            if (feeds < 1 || feeds > 10) {
+                alert("minimum buying items is 1 and the maximum is 10");
+                feedback();
+            } else if (feeds >= 1 && feeds <= 10) {
+                funcalamat();
+                alert("thankyou for your purchase")
+            } else {
+
+                alert('Input must be Number');
+                feedback();
+            }
+        }
+
+        function funcalamat() {
+            alamat = prompt("please input your shipping address : ");
+            if (alamat.length < 5) {
+                alert("the address input must contains more than 5 character");
+                funcalamat();
+            } else {
+                funchp();
+            }
+        }
+
+        function funchp() {
+            hp = prompt("please input your phone number : ");
+            if (hp.length != 12 && hp != angka) {
+                alert("the phone number is not valid");
+                funchp();
+            } else {
+                funemail();
+            }
+        }
+
+        function funemail() {
+            email = prompt("please input your email address to send your billing");
+            if ((email.indexOf('@', 0) == -1) || (email.indexOf('.', 0) == -1)) {
+                alert("email must be valid");
+                funemail();
+            } else {
+                alert("your bill sent to your valid email");
+
+            }
+        }
+    </script>
+</body>
+
+</html>

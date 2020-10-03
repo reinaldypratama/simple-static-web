@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/CSS" href="styleTiket.CSS">
+    <script src="js/tiket.js"></script>
+    <title>Project</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <nav>
+            <a class="contact" href="Home.html" target="_self">
+
+                <img class="logo-img" href src="assets/Logo Hci.png">
+
+            </a>
+            <div class="dropdown">
+                <a href="Home.html">Home</a>
+                <a href="Gallery.html">Gallery</a>
+                <div class="drop">
+                    <a href="" style="width: 100%;">Merch Official</a>
+                    <div class="dropdown-content">
+                        <a href="MerchStore.html">Hoodies</a>
+                        <a href="MerchStore2.html">Accessories</a>
+
+                    </div>
+                </div>
+                <a href="Tiket.html">Ticket</a>
+                <a href="About.html">About</a>
+            </div>
+        </nav>
+        <div class="content">
+            <img class="tiket-img" src="assets/tiket/stage.jpg">
+            <h1 class="ourtiket">TICKET PURCHASE</h1><br>
+            <div class="content-dalam">
+                <label class="label" for="name">Name</label><br>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label class="label" for="email">Email</label><br>
+                <input type="text" id="email" name="email"><br><br>
+
+                <label class="label" for="phone">Phone</label><br>
+                <input type="text" id="phone" name="phone"><br><br>
+
+                <label class="label" for="tikettype">Ticket Type</label><br>
+                <select id="tikettype" name="tikettype" style="width: 100%;">
+                    <option value="Platinum">Platinum</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Bronze">Bronze</option>
+                    
+                </select> <br><br>
+
+                <label class="label" for="quantity">Quantity</label><br>
+                <input type="number" id="quantity" placeholder="1-12" name="quantity" min="1" max="12"><br><br>
+
+
+                <input type="checkbox" name="terms" id="terms" style="height: 18px; width: 18px;">
+                <label class="option">I Agree Terms & Coditions </label>
+                <br>
+                <div class="error" id="errors">
+
+                </div>
+            </div>
+            <div style="width: 40%; margin: auto;">
+                <button id="resetbtn" class="but" onclick="reset()">reset</button>
+                <button id="loginbtn" class="but" onclick="submit()">buy</button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer">
+            <a class="center">&copy;Copyright Miku e-SKpo 2020</a>
+
+        </div>
+    </footer>
+</body>
+
+</html>
